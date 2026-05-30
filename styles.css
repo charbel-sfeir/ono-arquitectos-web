@@ -40,15 +40,15 @@ a {
 }
 
 .navbar {
-  height: 68px;
+  height: 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
 }
 
 .logo {
-  height: 68px;
+  height: 64px;
   display: flex;
   align-items: center;
   gap: 14px;
@@ -56,8 +56,8 @@ a {
 }
 
 .logo-image {
-  width: 96px;
-  height: 54px;
+  width: 86px;
+  height: 48px;
   display: block;
   overflow: hidden;
   position: relative;
@@ -65,30 +65,30 @@ a {
 }
 
 .logo-image img {
-  width: 150px;
+  width: 142px;
   height: auto;
   display: block;
   position: absolute;
-  top: -33px;
-  left: -27px;
+  top: -31px;
+  left: -28px;
   object-fit: contain;
   filter: contrast(1.55) brightness(0.62) saturate(0.75);
 }
 
 .logo-text {
-  height: 68px;
+  height: 64px;
   display: flex;
   align-items: center;
-  font-size: 12px;
-  font-weight: 900;
-  letter-spacing: 2.4px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
   text-transform: uppercase;
   color: #111111;
   line-height: 1;
 }
 
 .nav-links {
-  height: 68px;
+  height: 64px;
   display: flex;
   align-items: center;
   gap: 34px;
@@ -96,13 +96,13 @@ a {
 }
 
 .nav-links a {
-  height: 68px;
+  height: 64px;
   display: flex;
   align-items: center;
   position: relative;
-  font-size: 12px;
-  font-weight: 900;
-  letter-spacing: 2.4px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
   text-transform: uppercase;
   color: #111111;
   line-height: 1;
@@ -116,7 +116,7 @@ a {
   background-color: #111111;
   position: absolute;
   left: 0;
-  bottom: 20px;
+  bottom: 18px;
   transition: width 0.25s ease;
 }
 
@@ -124,7 +124,6 @@ a {
 .nav-links a.active::after {
   width: 100%;
 }
-
 .hero {
   min-height: 100vh;
   padding: 130px 7% 90px;
