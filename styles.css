@@ -473,7 +473,6 @@ a {
   height: 420px;
   display: block;
   border: 0;
-  filter: grayscale(1) invert(0.88) contrast(0.9);
 }
 
 .footer {
