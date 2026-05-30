@@ -526,7 +526,7 @@ a {
 
 @media (max-width: 850px) {
   .header {
-    padding: 7px 5%;
+    padding: 9px 5% 10px;
   }
 
   .navbar {
@@ -534,39 +534,54 @@ a {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: 8px;
+    gap: 10px;
   }
 
   .logo {
-    height: 34px;
-    gap: 9px;
+    width: 100%;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 
   .logo-image {
-    width: 58px;
-    height: 32px;
-    transform: translateY(-1px);
+    width: 74px;
+    height: 38px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+    transform: none;
   }
 
   .logo-image img {
-    width: 116px;
-    top: -31px;
-    left: -28px;
+    width: 124px;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: -29px;
+    left: -25px;
+    object-fit: contain;
   }
 
   .logo-text {
-    height: 34px;
-    font-size: 9.5px;
-    letter-spacing: 1.25px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
     white-space: nowrap;
   }
 
   .nav-links {
     width: 100%;
     height: 24px;
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: center;
+    gap: 6px;
   }
 
   .nav-item,
@@ -575,13 +590,25 @@ a {
   }
 
   .nav-links > .nav-item > a {
-    min-width: auto;
+    width: 100%;
+    min-width: 0;
     padding: 0;
     border: none;
     border-radius: 0;
-    font-size: 7.7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7.5px;
+    font-weight: 800;
     letter-spacing: 0.55px;
     white-space: nowrap;
+  }
+
+  .nav-links > .nav-item > a:hover,
+  .nav-links > .nav-item > a.active {
+    background-color: transparent;
+    color: #111111;
+    transform: none;
   }
 
   .nav-dropdown {
@@ -590,7 +617,7 @@ a {
 
   .hero {
     min-height: 100svh;
-    padding: 118px 6% 102px;
+    padding: 124px 6% 102px;
     align-items: flex-end;
     background-position: center;
   }
@@ -673,7 +700,6 @@ a {
     align-items: flex-start;
   }
 }
-
 @media (max-width: 380px) {
   .logo-text {
     font-size: 8.7px;
