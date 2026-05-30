@@ -57,7 +57,7 @@ a {
 
 .logo-image {
   width: 118px;
-  height: 46px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,6 +83,7 @@ a {
   text-transform: uppercase;
   color: #111111;
   line-height: 1;
+  transform: translateY(-1px);
 }
 
 .nav-links {
@@ -543,7 +544,7 @@ a {
 
   .logo-image {
     width: 86px;
-    height: 34px;
+    height: 38px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -566,6 +567,7 @@ a {
     font-weight: 800;
     letter-spacing: 1.35px;
     white-space: nowrap;
+    transform: translateY(-1px);
   }
 
   .nav-links {
