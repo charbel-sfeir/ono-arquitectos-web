@@ -8,9 +8,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css?v=9" />
+  <link rel="stylesheet" href="styles.css?v=11" />
 </head>
 <body>
 
@@ -26,10 +26,37 @@
       </a>
 
       <ul class="nav-links">
-        <li><a href="#estudio">Estudio</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li class="nav-item">
+          <a href="#estudio">Estudio</a>
+          <div class="nav-dropdown">
+            <span>Diseño, técnica y dirección de obra en Córdoba.</span>
+            <a href="#estudio">Conocer el estudio</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="#servicios">Servicios</a>
+          <div class="nav-dropdown">
+            <span>Proyecto arquitectónico, documentación y seguimiento.</span>
+            <a href="#servicios">Ver servicios</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="#proyectos">Proyectos</a>
+          <div class="nav-dropdown">
+            <span>Viviendas, dúplex, remodelaciones y espacios comerciales.</span>
+            <a href="#proyectos">Explorar proyectos</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="#contacto">Contacto</a>
+          <div class="nav-dropdown">
+            <span>Consultas, ubicación y redes del estudio.</span>
+            <a href="#contacto">Enviar consulta</a>
+          </div>
+        </li>
       </ul>
     </nav>
   </header>
@@ -138,6 +165,28 @@
         </button>
       </form>
     </section>
+
+    <section id="ubicacion" class="section location reveal">
+      <div class="location-copy">
+        <p class="eyebrow">Ubicación</p>
+        <h2>Oficina en Córdoba.</h2>
+        <p>
+          La Rioja 441, Córdoba, Argentina.
+        </p>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=La+Rioja+441,+Cordoba,+Argentina" target="_blank">
+          Abrir en Google Maps
+        </a>
+      </div>
+
+      <div class="map-frame">
+        <iframe
+          title="Ubicación ONO Arquitectos"
+          src="https://www.google.com/maps?q=La%20Rioja%20441%2C%20Cordoba%2C%20Argentina&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -150,6 +199,6 @@
     </div>
   </footer>
 
-  <script src="scripts.js?v=9"></script>
+  <script src="scripts.js?v=11"></script>
 </body>
 </html>
