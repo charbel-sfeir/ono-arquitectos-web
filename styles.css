@@ -68,7 +68,7 @@ a {
   height: auto;
   display: block;
   position: absolute;
-  top: -38px;
+  top: -34px;
   left: -27px;
   object-fit: contain;
   filter: contrast(1.55) brightness(0.62) saturate(0.75);
@@ -440,56 +440,97 @@ a {
   transform: translateY(0);
 }
 
+/* MOBILE ONLY */
 @media (max-width: 850px) {
   .header {
-    padding: 6px 6%;
+    padding: 10px 6% 12px;
   }
 
   .navbar {
     min-height: auto;
-    align-items: flex-start;
-    gap: 12px;
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .logo {
+    gap: 10px;
   }
 
   .logo-image {
-    width: 60px;
-    height: 36px;
+    width: 54px;
+    height: 32px;
   }
 
   .logo-image img {
-    width: 122px;
-    top: -33px;
-    left: -29px;
+    width: 118px;
+    top: -34px;
+    left: -30px;
   }
 
-  .logo-text,
-  .nav-links a {
-    font-size: 11px;
-    letter-spacing: 1.7px;
+  .logo-text {
+    font-size: 10px;
+    letter-spacing: 2px;
+    white-space: nowrap;
   }
 
   .nav-links {
-    gap: 14px;
-    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    flex-wrap: nowrap;
+  }
+
+  .nav-links a {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    white-space: nowrap;
+  }
+
+  .nav-links a::after {
+    bottom: -5px;
   }
 
   .hero {
-    padding: 200px 6% 70px;
+    min-height: 100svh;
+    padding: 170px 6% 130px;
+    align-items: flex-end;
+    background-position: center;
   }
 
   .hero h1 {
-    font-size: 44px;
+    font-size: 42px;
+    line-height: 0.96;
+    letter-spacing: -0.5px;
+    max-width: 100%;
+    margin-bottom: 24px;
   }
 
   .hero p {
     font-size: 18px;
+    line-height: 1.45;
+    max-width: 100%;
+  }
+
+  .hero-actions {
+    width: 100%;
+    gap: 12px;
+    margin-top: 30px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 13px 18px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
   }
 
   .slider-dots {
     left: 6%;
     right: auto;
-    bottom: 46px;
+    bottom: 78px;
   }
 
   .split-section,
@@ -498,12 +539,26 @@ a {
     grid-template-columns: 1fr;
   }
 
-  .project-card {
-    min-height: 340px;
+  .section {
+    padding: 86px 6%;
   }
 
-  .section {
-    padding: 90px 6%;
+  .section h2 {
+    font-size: 36px;
+    line-height: 1.08;
+  }
+
+  .section > p,
+  .split-section > p {
+    font-size: 16px;
+  }
+
+  .card {
+    padding: 30px 24px;
+  }
+
+  .project-card {
+    min-height: 330px;
   }
 
   .form-row {
